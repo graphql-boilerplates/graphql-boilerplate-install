@@ -18,7 +18,7 @@ export async function writeEnv() {
   .then(res => {
     const endpointInfo = JSON.parse(res)
     fs.writeFileSync('.env', `\
-GRAPHCOOL_SECRET=mysecret123
+GRAPHCOOL_SECRET=${endpointInfo.secret}
 GRAPHCOOL_STAGE=${endpointInfo.stage}
 GRAPHCOOL_CLUSTER=${endpointInfo.cluster}
 GRAPHCOOL_ENDPOINT=${endpointInfo.httpEndpoint}`)
