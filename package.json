@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rimraf dist && tsc -d",
     "test": "echo No tests..."
   },
