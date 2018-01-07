@@ -26,7 +26,7 @@ export async function writeEnv() {
   return spawn('graphcool', ['info', '--current', '--json'], { stdio: 'pipe'})
   .then(res => {
     const endpointInfo = JSON.parse(res)
-    fs.writeFileSync('.env', `\
+    fs.appendFileSync('.env', `\
 GRAPHCOOL_SECRET=${endpointInfo.secret}
 GRAPHCOOL_STAGE=${endpointInfo.stage}
 GRAPHCOOL_CLUSTER=${endpointInfo.cluster}
