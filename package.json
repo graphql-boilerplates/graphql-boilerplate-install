@@ -1,11 +1,26 @@
 {
   "name": "graphql-boilerplate-install",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.ts",
+  "typings": "dist/index.d.ts",
   "repository": "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
   "author": "Johannes Schickling <schickling.j@gmail.com>",
+  "contributors": [
+    "Kim Brandwijk <kim.brandwijk@gmail.com>"
+  ],
   "license": "MIT",
   "scripts": {
-    "test": "echo No tests yet"
+    "build": "rimraf dist && tsc -d"
+  },
+  "dependencies": {
+    "cross-spawn": "5.1.0",
+    "graphcool": "1.0.0-alpha3.3.5",
+    "npm-run": "4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "8.5.7",
+    "rimraf": "2.6.2",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
   }
 }
