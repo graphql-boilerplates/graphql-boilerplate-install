@@ -1,0 +1,11 @@
+{
+  "name": "graphql-boilerplate-install",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
+  "author": "Johannes Schickling <schickling.j@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo No tests yet"
+  }
+}
