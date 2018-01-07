@@ -14,9 +14,11 @@
     "build": "rimraf dist && tsc -d",
     "test": "echo No tests..."
   },
+  "peerDependencies": {
+    "graphcool": "1.0.0-alpha3.3.5"
+  },
   "dependencies": {
     "cross-spawn": "5.1.0",
-    "graphcool": "1.0.0-alpha3.3.5",
     "npm-run": "4.1.2"
   },
   "devDependencies": {
