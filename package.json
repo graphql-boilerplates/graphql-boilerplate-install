@@ -10,7 +10,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && tsc -d"
+    "build": "rimraf dist && tsc -d",
+    "test": "echo No tests..."
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
