@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as npmrun from 'npm-run'
 
 export function replaceInFiles(filePaths: string[], searchValue: string, replaceValue: string) {
-  for (const filePath in filePaths) {
+  for (const filePath of filePaths) {
     replaceInFile(filePath, searchValue, replaceValue)
   }
 }
