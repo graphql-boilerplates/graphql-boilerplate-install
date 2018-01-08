@@ -15,11 +15,8 @@ export async function deploy(silent: boolean) {
 
 export async function getInfo(): Promise<any> {
   return spawn('graphcool', ['info', '--current', '--json'], { stdio: 'pipe'})
-  .then(res => {
-    const endpointInfo = JSON.parse(res)
-    return endpointInfo
-  })
-  .catch(err => console.error(err))
+    .then(res => JSON.parse(res))
+    .catch(err => console.error(err))
 }
 
 export async function writeEnv() {
