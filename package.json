@@ -22,7 +22,7 @@
     "npm-run": "4.1.2"
   },
   "devDependencies": {
-    "@types/node": "8.5.7",
+    "@types/node": "9.3.0",
     "rimraf": "2.6.2",
     "ts-node": "4.1.0",
     "typescript": "2.6.2"
