@@ -15,7 +15,7 @@
     "test": "echo No tests..."
   },
   "peerDependencies": {
-    "graphcool": "1.0.0-beta4.0.6"
+    "graphcool": "1.0.0-beta4.1.1"
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
