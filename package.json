@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "repository": "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
+  "repository":
+    "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
   "author": "Johannes Schickling <schickling.j@gmail.com>",
-  "contributors": [
-    "Kim Brandwijk <kim.brandwijk@gmail.com>"
-  ],
+  "contributors": ["Kim Brandwijk <kim.brandwijk@gmail.com>"],
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -15,7 +14,7 @@
     "test": "echo No tests..."
   },
   "peerDependencies": {
-    "graphcool": "1.0.0-beta4.1.1"
+    "prisma-cli": "beta"
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
