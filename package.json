@@ -14,7 +14,7 @@
     "test": "echo No tests..."
   },
   "peerDependencies": {
-    "prisma-cli": "beta"
+    "prisma": "1.0.4"
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
