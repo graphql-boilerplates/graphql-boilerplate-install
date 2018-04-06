@@ -14,7 +14,7 @@
     "test": "echo No tests..."
   },
   "peerDependencies": {
-    "prisma": "latest"
+    "prisma": "1.5.3"
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
