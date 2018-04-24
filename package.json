@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "repository":
-    "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
+  "repository": "git@github.com:graphql-boilerplates/graphql-boilerplate-install.git",
   "author": "Johannes Schickling <schickling.j@gmail.com>",
-  "contributors": ["Kim Brandwijk <kim.brandwijk@gmail.com>"],
+  "contributors": [
+    "Kim Brandwijk <kim.brandwijk@gmail.com>"
+  ],
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -18,7 +19,9 @@
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
-    "npm-run": "4.1.2"
+    "node-fetch": "^2.1.2",
+    "npm-run": "4.1.2",
+    "sillyname": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "8.5.7",
