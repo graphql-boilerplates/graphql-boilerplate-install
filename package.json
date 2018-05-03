@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "cross-spawn": "5.1.0",
+    "http-proxy-agent": "^2.1.0",
     "node-fetch": "^2.1.2",
     "npm-run": "4.1.2",
     "sillyname": "^0.1.0"

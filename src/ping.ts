@@ -1,4 +1,5 @@
 import * as fetch from 'node-fetch'
+import HttpProxyAgent from 'http-proxy-agent'
 export type Region = 'EU_WEST_1' | 'US_WEST_2'
 
 const regionMap = {
@@ -11,7 +12,11 @@ async function runPing(url: string): Promise<number> {
     const start = Date.now()
 
     if (process.env.NODE_ENV !== 'test') {
-      await fetch(url)
+      if (process.env.HTTP_PROXY) {
+        await fetch(url, { agent:new HttpProxyAgent(process.env.HTTP_PROXY)})
+      } else {
+        await fetch(url)
+      }
     }
 
     return Date.now() - start
